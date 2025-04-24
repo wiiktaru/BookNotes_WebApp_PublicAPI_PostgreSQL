@@ -12,11 +12,24 @@
     <%- include("partials/header.ejs") %>
 
     <!--main part of the page-->
-    <div class="container" id="a-book">
+    <div class="container book">
       <h2>This is a title</h2>
       <h3>This is a date</h3>
-      <p>Here comes the image</p>
-      <p>This is the note</p>
+      <div class="container notes-image">
+        <div>
+          <img
+            src="https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg"
+          />
+        </div>
+        <div>
+          <p class="note">
+            This is the note lorem ipsun yada yada äasäd kaäsd akasdäk asadkäa
+            asdköaä käasdkäa k asdkaä käöadkaöäk aöskakd kaskdöak aösdka ojoasda
+            asda
+          </p>
+        </div>
+      </div>
+      <button class="button" type="button">Edit note</button>
     </div>
 
     <!--add footer-->

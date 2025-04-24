@@ -2,10 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
-#singleNote {
-  outline: 5px solid black;
-  width: 1000px;
+.book {
+  outline: 2px solid black;
+  width: 35%;
+  margin: auto;
+}
+
+.notes-image {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.note {
+  font-size: 1.5rem;
+  padding: 0px 20px;
+}
+
+.button {
+  margin: 20px;
 }
