@@ -11,7 +11,7 @@
     <!--add header-->
     <%- include("partials/header.ejs") %>
 
-    <!--main part of the page-->
+    <!--main part of the page -->
     <% if(locals.bookNotes) { bookNotes.forEach(note => { %>
     <div class="container book">
       <h2><%= note.title %></h2>

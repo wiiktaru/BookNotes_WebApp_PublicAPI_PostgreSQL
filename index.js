@@ -1,10 +1,14 @@
 // Import modules for the app to use
 import express from "express";
 import bodyParser from "body-parser";
+import { createdbClient } from "./dbConfig";
 
 // Initialize the Express app and set the port for the server to listen to
 const app = express();
 const port = 3000;
+
+const db = createdbClient();
+db.connect();
 
 // Middlewear to parse incoming request bodies
 app.use(bodyParser.urlencoded({ extended: true }));
