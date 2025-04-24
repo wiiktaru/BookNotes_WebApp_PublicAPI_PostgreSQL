@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
 }
 
 .book {
-  outline: 2px solid black;
   width: 35%;
   margin: auto;
 }
@@ -15,7 +13,6 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 20px;
 }
 
 .note {
