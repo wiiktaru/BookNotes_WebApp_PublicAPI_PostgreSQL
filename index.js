@@ -11,9 +11,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Makes the contents of the "public" directory accessible to the client
 app.use(express.static("public"));
 
+//test data for notes
+const notes = [
+  { title: "AA", note: "Aa" },
+  { title: "BB", note: "Bb" },
+  { title: "CC", note: "Cc" },
+];
+
 // Main page route
 app.get("/", (req, res) => {
-  res.render("index.ejs");
+  res.render("index.ejs", {
+    bookNotes: notes,
+  });
 });
 
 // Start the server
