@@ -12,7 +12,13 @@
     <%- include("partials/header.ejs") %>
 
     <!--main part of the page -->
-    <% if(locals.bookNotes) { bookNotes.forEach(note => { %>
+    <% if(locals.bookNotes) {%>
+    <div class="container">
+      <form class="form" action="/new" method="POST">
+        <input type="submit" value="Add new note" />
+      </form>
+    </div>
+    <% bookNotes.forEach(note => { %>
     <div class="container book">
       <h2><%= note.title %></h2>
       <div class="container notes-image">
@@ -30,7 +36,9 @@
     </div>
 
     <% }); } else { %>
-    <p>Add a new note comes here</p>
+    <form class="form" action="/new" method="POST">
+      <input type="submit" value="Add new note" />
+    </form>
     <% } %>
 
     <!--add footer-->
