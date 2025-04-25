@@ -36,6 +36,11 @@ app.get("/", async (req, res) => {
   });
 });
 
+// Add new note route
+app.post("/new", (req, res) => {
+  res.render("new.ejs");
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
