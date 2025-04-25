@@ -41,6 +41,28 @@ app.post("/new", (req, res) => {
   res.render("new.ejs");
 });
 
+// Add new note to db route
+app.post("/add", async (req, res) => {
+  const isbn = req.body.isbn;
+  const title = req.body.title;
+  const note = req.body.note;
+
+  console.log(isbn + " " + title + " " + note);
+
+  try {
+    const result = await db.query(
+      "INSERT INTO notes (isbn, title, note) VALUES ($1, $2, $3) RETURNING isbn",
+      [isbn, title, note]
+    );
+
+    console.log(result);
+  } catch (err) {
+    console.log(err);
+  }
+
+  res.redirect("/");
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
