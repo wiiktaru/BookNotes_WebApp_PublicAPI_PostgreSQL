@@ -10,6 +10,33 @@
   <body>
     <!--add header-->
     <%- include("partials/header.ejs") %>
+    <div class="container">
+      <form action="/add" method="POST">
+        <input
+          class="textbox"
+          type="text"
+          name="isbn"
+          placeholder="ISBN"
+        /><br />
+        <input
+          class="textbox"
+          type="text"
+          name="title"
+          placeholder="Title"
+        /><br />
+        <textarea
+          class="textbox"
+          name="largeText"
+          rows="10"
+          cols="50"
+          wrap="soft"
+        >
+Note</textarea
+        >
+        <br />
+        <button type="submit">Add new book note</button>
+      </form>
+    </div>
 
     <!--add footer-->
     <%- include("partials/footer.ejs") %>

@@ -23,3 +23,16 @@
 .button {
   margin: 20px;
 }
+
+.textbox {
+  width: 600px;
+  margin: 20px;
+}
+
+.bookNote {
+  height: 400px;
+}
+
+button {
+  width: 150px;
+}
