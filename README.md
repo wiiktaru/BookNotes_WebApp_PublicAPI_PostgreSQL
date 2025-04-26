@@ -3,7 +3,7 @@
 ## Description
 Book notes app is a solution created with the Express framework and Node.js, includin PostgreSQL as a database and a public API (https://openlibrary.org/dev/docs/api/covers). 
 
-With this project I aim to develope understanding of how to integrate database and public API into web projects and how to use Express/Node.js for server-side programming. I practice understanding the database-server and server-client communication. 
+With this project I aim to develope understanding of how to integrate database and public API into web projects and how to use Express/Node.js for server-side programming. I practice understanding the database-server and server-client communication. I also practice version controlling for web api. 
 
 Public/Pictures folder has a mainpage.jpg and addnew.jpg files for app demo picture.
 
