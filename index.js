@@ -63,6 +63,17 @@ app.post("/add", async (req, res) => {
   res.redirect("/");
 });
 
+// Edit note route
+app.post(`/edit/:isbn`, (req, res) => {
+  const isbn = req.params.isbn;
+
+  console.log(isbn);
+
+  res.render("edit.ejs", {
+    isbn: isbn,
+  });
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

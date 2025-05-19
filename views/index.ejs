@@ -32,7 +32,11 @@
           <p class="note"><%= note.note %></p>
         </div>
       </div>
-      <button type="button">Edit note</button>
+      <div class="container">
+        <form action="/edit/<%= note.id %>" method="POST">
+          <input type="submit" value="Edit a note" />
+        </form>
+      </div>
     </div>
 
     <% }); } else { %>
